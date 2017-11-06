@@ -1,2 +1,67 @@
 // Buttons
 // ----------------------------------------------
+.button{
+	&.transparent{
+		&:hover{
+			background: #fff;
+			color: $black;
+		}
+	}
+	&.border-white{
+		border: 2px solid #fff;
+	}
+	&.wide{
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+}
+.button-white{
+	background-color: #fff;
+	color: $black;
+	&:hover{
+		background-color: transparent;
+		color: #fff;
+	}
+}
+
+.button-transparent{
+	background-color: transparent;
+	color: #fff;
+	&:hover{
+		background-color: #fff;
+		color: $black;
+	}
+}
+
+.button-black{
+	@extend .button;
+	@extend .rounded;
+	background-color: $black;
+	color: #fff;
+	&:hover{
+		background-color: #000;
+		color: #fff;
+	}
+}
+
+
+.menu-button{
+	padding: 0 5px;
+}
+
+.menu-button-white{
+	a{
+		@extend .button;
+		@extend .rounded;
+		@extend .border-white;
+		@extend .button-white;
+	}
+}
+.menu-button-transparent{
+	a{
+		@extend .button;
+		@extend .rounded;
+		@extend .border-white;
+		@extend .button-transparent;
+	}
+}

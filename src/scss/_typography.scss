@@ -1,7 +1,123 @@
-/*=Typography
----------------------------------------------------------------------*/
 
-/**
- * Header font sizes are set under the foundation settings. This can be
- * used to overwrite those or for any additional typography styles.
- */
+
+p, .p1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: rem-calc(16px);
+    line-height: 1.5;
+    @include breakpoint(medium down) {
+        //font-size: ;
+    }
+}
+
+.p2, .p2 > p{
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: rem-calc(18px);
+    line-height: 1.4;
+}
+.p-small{
+    font-size: rem-calc(12px);
+    line-height: 1.2;
+}
+
+.h1, h1{
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: rem-calc(65px);
+    line-height: rem-calc(132px);
+    margin: 10px auto;
+    @include breakpoint(medium down) {
+        //font-size: ;
+    }
+}
+
+.h2, h2{
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: rem-calc(55px);
+    line-height: 1;
+    @include breakpoint(medium down) {
+        //font-size: ;
+    }
+}
+.h3, h3{
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: rem-calc(36px);
+    line-height: 1;
+    @include breakpoint(medium down) {
+        //font-size: ;
+    }
+}
+.h4, h4{
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: rem-calc(32px);
+    line-height: 1;
+    @include breakpoint(medium down) {
+        //font-size: ;
+    }
+}
+
+.h5, h5{
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: rem-calc(30px);
+    line-height: 1;
+    @include breakpoint(medium down) {
+        //font-size: ;
+    }
+}
+
+.h6, h6{
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: rem-calc(28px);
+    line-height: 1;
+    @include breakpoint(medium down) {
+        //font-size: ;
+    }
+}
+
+ol {
+  counter-reset: item;
+  margin: 0 0 1.5em;
+  padding: 0;
+  > li {
+    counter-increment: item;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 2rem;
+    text-indent: -1.2rem;
+    &::before {
+      content: counter(item) '.';
+      display: inline-block;
+      font-weight: 700;
+      padding-right: .5rem;      
+      text-align: right;
+      width: 1.5rem;
+    }
+  }
+}
+
+ol li,
+ul li,
+li,
+dd{
+    @extend p;
+}
+dd {
+    margin: 0 auto;
+}
+
+a{
+    color: currentColor;
+    font-family: 'Source Sans Pro', sans-serif;
+    &:active{
+        text-decoration: none;
+    }
+    &:focus{
+        outline: none;
+        text-decoration: none;
+    }
+    &:hover{
+        text-decoration: none;
+        color: currentColor;
+    }
+    &.btn {
+        text-decoration: none;
+    }
+}

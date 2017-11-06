@@ -1,0 +1,43 @@
+//checkbox
+.pretty{
+  white-space: normal;
+}
+.pretty .state label:after, 
+.pretty .state label:before {
+    top: 2.5px;
+    //top: calc((0% - (40% - 1em)) - 8%);
+}
+
+//accordions
+.accordion-title{
+  color: #000;
+  font-weight: 700;
+  font-size: rem-calc(16px);
+  padding: 2.25rem 3.25rem 2.25rem 0;
+  &:focus{
+    color: #000;
+  }
+}
+.accordion-item{
+  margin-bottom: 0px;
+  border-bottom: 1px solid $grey;
+}
+.accordion-title:before{
+  //content: url(../images/Arrow-Down.png);
+}
+.is-active>.accordion-title:before{
+  //content: url(../images/Arrow-Up.png);
+}
+
+//Tables
+table tfoot td, 
+table tfoot th, 
+table thead td, 
+table thead th{
+  text-align: center;
+  border: 1px solid $grey;
+}
+table tbody td, 
+table tbody th{
+  border: 1px solid $grey;
+}

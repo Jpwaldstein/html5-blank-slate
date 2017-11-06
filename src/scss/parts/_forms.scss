@@ -74,3 +74,21 @@ $grid-padding: 10;
 
 // Custom Ninja Forms Styles
 // ------------------------------------
+
+
+//Application Form
+
+.application-form{
+    input[type="text"],
+    .pretty .state label:after, 
+    .pretty .state label:before{
+        background-image: url(../images/field-bg.png);
+        background-repeat: no-repeat;
+        background-color: #fff;
+    }
+}
+
+.pretty.p-toggle .state.p-info label:after, 
+.pretty input:checked~.state.p-info label:after{
+    background-image: none;
+}

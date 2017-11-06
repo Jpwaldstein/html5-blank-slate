@@ -3,7 +3,7 @@
     "version": "3.6.0",
     "private": "true",
     "dependencies": {
-        "foundation-sites": "6.2.0",
+        "foundation-sites": "6.4.3",
         "slick-carousel": "~1.5.9"
     }
 }

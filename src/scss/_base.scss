@@ -17,3 +17,14 @@ hr {
     border: 0;
     border-top: 1px solid #ccc;
 }
+body{
+	overflow-x: hidden;
+    font-style: 16px;
+    &:not(.home){
+        .content-wrap{
+            @include breakpoint(medium down) {
+                padding: 5px;
+            }
+        }
+    }
+}

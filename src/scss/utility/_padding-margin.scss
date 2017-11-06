@@ -1,0 +1,191 @@
+@media screen and (max-width: 39.9375em) {}
+$media_xs: "(max-width: 39.9375em)";
+
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+$media_sm: "(min-width: 40em) and (max-width: 63.9375em)";
+
+
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+$media_md: "(min-width: 64em) and (max-width: 74.9375em)";
+
+
+@media screen and (min-width: 75em) {}
+$media_lg: "(min-width: 75em)";
+
+$position: ('top','right','bottom','left');
+
+$number_start: 0;
+$number_end: 100;
+
+/*
+|--------------------------------------------------------------------------
+| Padding
+|--------------------------------------------------------------------------
+*/
+@for $i from $number_start through $number_end {
+  //$i: $i*5;
+  @if $i <= 100{
+    @each $side in $position {
+        .p-#{$side}-#{$i}px {
+            padding-#{$side}: $i * 1px;
+        }
+    }
+  }
+}
+/*
+|--------------------------------------------------------------------------
+| Padding XS
+|--------------------------------------------------------------------------
+*/
+@media #{$media_xs} {
+  @for $i from $number_start through $number_end {
+    //$i: $i*5;
+    @if $i <= 100{
+      @each $side in $position {
+       .p-#{$side}-#{$i}px-xs {
+            padding-#{$side}: $i * 1px;
+        } 
+      }
+    }
+  }
+}
+/*
+|--------------------------------------------------------------------------
+| Padding SM
+|--------------------------------------------------------------------------
+*/
+@media #{$media_sm} {
+  @for $i from $number_start through $number_end {
+    //$i: $i*5;
+    @if $i <= 100{
+      @each $side in $position {
+       .p-#{$side}-#{$i}px-sm {
+            padding-#{$side}: $i * 1px;
+        } 
+      }
+    }
+  }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Padding MD
+|--------------------------------------------------------------------------
+*/
+@media #{$media_md} {
+  @for $i from $number_start through $number_end {
+    //$i: $i*5;
+    @if $i <= 100{
+      @each $side in $position {
+       .p-#{$side}-#{$i}px-md {
+            padding-#{$side}: $i * 1px;
+        } 
+      }
+    }
+  }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Padding LG
+|--------------------------------------------------------------------------
+*/
+@media #{$media_lg} {
+  @for $i from $number_start through $number_end {
+    //$i: $i*5;
+    @if $i <= 100{
+      @each $side in $position {
+       .p-#{$side}-#{$i}px-lg {
+            padding-#{$side}: $i * 1px;
+        } 
+      }
+    }
+  }
+}
+
+/*
+|--------------------------------------------------------------------------
+| margin
+|--------------------------------------------------------------------------
+*/
+@for $i from $number_start through $number_end {
+  //$i: $i*5;
+  @if $i <= 100{
+    @each $side in $position {
+        .m-#{$side}-#{$i}px {
+            margin-#{$side}: $i * 1px;
+        }
+    }
+  }
+}
+/*
+|--------------------------------------------------------------------------
+| margin XS
+|--------------------------------------------------------------------------
+*/
+@media #{$media_xs} {
+  @for $i from $number_start through $number_end {
+    //$i: $i*5;
+    @if $i <= 100{
+      @each $side in $position {
+       .m-#{$side}-#{$i}px-xs {
+            margin-#{$side}: $i * 1px;
+        } 
+      }
+    }
+  }
+}
+/*
+|--------------------------------------------------------------------------
+| margin SM
+|--------------------------------------------------------------------------
+*/
+@media #{$media_sm} {
+  @for $i from $number_start through $number_end {
+    //$i: $i*5;
+    @if $i <= 100{
+      @each $side in $position {
+       .m-#{$side}-#{$i}px-sm {
+            margin-#{$side}: $i * 1px;
+        } 
+      }
+    }
+  }
+}
+
+/*
+|--------------------------------------------------------------------------
+| margin MD
+|--------------------------------------------------------------------------
+*/
+@media #{$media_md}{
+  @for $i from $number_start through $number_end {
+    //$i: $i*5;
+    @if $i <= 100{
+      @each $side in $position {
+       .m-#{$side}-#{$i}px-md {
+            margin-#{$side}: $i * 1px;
+        } 
+      }
+    }
+  }
+}
+
+/*
+|--------------------------------------------------------------------------
+| margin LG
+|--------------------------------------------------------------------------
+*/
+@media #{$media_lg}{
+  @for $i from $number_start through $number_end {
+    //$i: $i*5;
+    @if $i <= 100{
+      @each $side in $position {
+       .m-#{$side}-#{$i}px-lg {
+            margin-#{$side}: $i * 1px;
+        } 
+      }
+    }
+  }
+}

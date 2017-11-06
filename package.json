@@ -3,7 +3,9 @@
   "private": "true",
   "dependencies": {
     "foundation-sites": "6.2.0",
-    "motion-ui": "^1.2.3"
+    "motion-ui": "^1.2.3",
+    "pretty-checkbox": "^3.0.3",
+    "slick-carousel-browserify": "^1.6.12"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",

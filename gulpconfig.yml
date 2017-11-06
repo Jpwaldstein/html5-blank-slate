@@ -23,7 +23,7 @@ css:
     cascade: false
 
 browsersync:
-  proxy: localhost
+  proxy: lemonlaw.dev
   notify: false
   open: false
   snippetOptions:

@@ -41,6 +41,7 @@
 //  36. Top Bar
 
 @import 'foundation-sites/scss/util/util';
+//@import 'foundation-sites/scss/prototype/prototype';
 
 // 1. Global
 // ---------
@@ -54,6 +55,7 @@ $foundation-palette: (
   success: #3adb76,
   warning: #ffae00,
   alert: #ec5840,
+  transparent: transparent
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
@@ -196,12 +198,13 @@ $input-error-font-weight: $global-weight-bold;
 $accordion-background: $white;
 $accordion-plusminus: true;
 $accordion-item-color: foreground($accordion-background, $primary-color);
-$accordion-item-background-hover: $light-gray;
+$accordion-item-background-hover: none;
 $accordion-item-padding: 1.25rem 1rem;
 $accordion-content-background: $white;
-$accordion-content-border: 1px solid $light-gray;
+$accordion-content-border: none;
 $accordion-content-color: foreground($accordion-background, $primary-color);
 $accordion-content-padding: 1rem;
+$accordion-title-font-size: rem-calc(16px);
 
 // 8. Accordion Menu
 // -----------------
@@ -457,7 +460,7 @@ $reveal-padding: $global-padding;
 $reveal-border: 1px solid $medium-gray;
 $reveal-radius: $global-radius;
 $reveal-zindex: 1005;
-$reveal-overlay-background: rgba($black, 0.45);
+$reveal-overlay-background: rgba($black, 0.80);
 
 // 29. Slider
 // ----------
@@ -491,7 +494,7 @@ $switch-paddle-transition: all 0.25s ease-out;
 
 // 31. Table
 // ---------
-
+$table-is-striped: false;
 $table-background: $white;
 $table-color-scale: 5%;
 $table-border: 1px solid smart-scale($table-background, $table-color-scale);
@@ -499,9 +502,9 @@ $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
-$table-striped-background: smart-scale($table-background, $table-color-scale);
+$table-striped-background: none;
 $table-stripe: even;
-$table-head-background: smart-scale($table-background, $table-color-scale / 2);
+$table-head-background: transparent;
 $table-foot-background: smart-scale($table-background, $table-color-scale);
 $table-head-font-color: $body-font-color;
 $show-header-for-stacked: false;

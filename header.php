@@ -21,15 +21,22 @@
 
 <body <?php body_class(); ?>>
 
-<header class="site-header" role="banner">
-    <p class="logo"><a href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a></p>
-
-    <nav class="nav-main-wrap" role="navigation">
-        <?php h5bs_primary_nav(); ?>
-    </nav>
-
-    <nav class="nav-mobile-wrap" role="navigation">
-        <i id="nav-mobile-toggle" class="nav-mobile-toggle fa fa-bars"></i>
-        <?php h5bs_mobile_nav(); ?>
-    </nav>
+<header id="site-header" class="header" role="banner">
+    <div class="header-content row">
+        <div class="header-content__left flex-1">
+        </div>
+        <div class="header-content__middle flex-1 text-center">
+            <span class="logo">
+                <a href="<?php echo home_url( '/' ); ?>">
+                    <img src="<?= get_template_directory_uri()?>/assets/images/logo.png" alt="">
+                </a>
+            </span>
+        </div>
+        <div class="header-content__right flex-1">
+            <nav class="nav-mobile-wrap" role="navigation">
+                <i id="nav-mobile-toggle" class="nav-mobile-toggle fa fa-bars"></i>
+                <?php h5bs_mobile_nav(); ?>
+            </nav>
+        </div>
+    </div>
 </header>

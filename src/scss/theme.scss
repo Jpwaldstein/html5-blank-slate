@@ -1,7 +1,9 @@
 // 3rd Party
 // ----------------------------------------------
 @import 'foundation_setup';
+@import 'foundation_prototype';
 @import 'motion-ui-setup';
+
 
 // plugins
 // add additional plugin styles here
@@ -11,7 +13,10 @@
 // ----------------------------------------------
 @import 'deps/variables';
 @import 'deps/mixins';
+@import 'deps/slick';
 
+//3rd party after variables
+@import 'pretty-checkbox/src/pretty-checkbox.scss';
 
 // Base
 // ----------------------------------------------
@@ -33,6 +38,7 @@
 @import 'parts/forms';
 @import 'parts/buttons';
 @import 'parts/nav';
+@import 'components.scss';
 
 
 // Sections
@@ -56,4 +62,7 @@
 // ----------------------------------------------
 
 // helper classes
-@import 'helpers';
+@import 'utility/helpers';
+@import 'utility/padding-margin';
+@import 'utility/colors';
+@import 'utility/flex';
