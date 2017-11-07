@@ -5,15 +5,10 @@
  */
 ?>
 
-<?php get_template_part('parts/applicationModal'); ?>
-
 <footer class="footer row p-top-50px p-bottom-50px">
     <div class="column small-12 text-center">
         <div class="footer-copyright">
-            <a class="applicationModal" href="#">MODAL</a>
-            <p>Have questions? Happy to help. <a class="text-underline" href="#">Email</a> us or call us at 617-939-0368 Monday through Friday 9AM – 6PM ET, excluding public holidays.</p>
-            <p><strong><a class="text-underline" href="/terms-and-conditions/">Terms & Conditions</a></strong> / <strong><a class="text-underline" href="/privacy-policy/">Privacy Policy</a></strong></p>
-            <img src="<?= get_stylesheet_directory_uri();?>/assets/images/Powered-by-TLC-updated-BW-Copy.png" alt="">
+            <p class="copyright">&copy; <?php echo date( 'Y' ); ?> <?php echo get_bloginfo( 'name' ); ?></p>
         </div>
     </div>
 </footer>
