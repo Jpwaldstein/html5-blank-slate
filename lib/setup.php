@@ -3,8 +3,6 @@
 function h5bs_register_menus() {
     register_nav_menus(array(
         'primary'   => __( 'Primary Navigation', 'h5bs' ),
-        'primary-left'   => __( 'Primary Navigation Left', 'h5bs' ),
-        'primary-right'   => __( 'Primary Navigation Right', 'h5bs' ),
         'secondary' => __( 'Secondary Navigation', 'h5bs' ),
         'footer'    => __( 'Footer Navigation', 'h5bs' ),
         'mobile'    => __( 'Mobile Navigation', 'h5bs' )
