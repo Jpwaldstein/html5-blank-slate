@@ -30,38 +30,6 @@ function h5bs_primary_nav() {
     ));
 }
 
-function h5bs_primary_nav_left() {
-    wp_nav_menu(array(
-        'container'       => false,                        // remove nav container
-        'menu'            => 'Primary Nav Left',                // nav name
-        'menu_id'         => 'nav-main-left',                   // custom id
-        'menu_class'      => 'dropdown menu',         // custom class
-        'theme_location'  => 'primary-left',                    // where it's located in the theme
-        'before'          => '',                           // before the menu
-        'after'           => '',                           // after the menu
-        'link_before'     => '',                           // before each link
-        'link_after'      => '',                           // after each link
-        'depth'           => 0,                            // set to 1 to disable dropdowns
-        'fallback_cb'     => 'h5bs_nav_fallback'           // fallback function
-    ));
-}
-
-function h5bs_primary_nav_right() {
-    wp_nav_menu(array(
-        'container'       => false,                        // remove nav container
-        'menu'            => 'Primary Nav Right',                // nav name
-        'menu_id'         => 'nav-main-right',                   // custom id
-        'menu_class'      => 'dropdown menu',         // custom class
-        'theme_location'  => 'primary-right',                    // where it's located in the theme
-        'before'          => '',                           // before the menu
-        'after'           => '',                           // after the menu
-        'link_before'     => '',                           // before each link
-        'link_after'      => '',                           // after each link
-        'depth'           => 0,                            // set to 1 to disable dropdowns
-        'fallback_cb'     => 'h5bs_nav_fallback'           // fallback function
-    ));
-}
-
 function h5bs_secondary_nav() {
     wp_nav_menu(array(
         'container'       => false,                        // remove nav container
