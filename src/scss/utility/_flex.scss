@@ -1,22 +1,40 @@
 .flex{
 	display: flex;
 }
-.flex-md{
-	@media(min-width: 40em){
+.flex-md-up{
+	@include breakpoint(medium up) {
 		display: flex;
-	}
+    }
 }
 .flex-center{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column; //ie11
 }
 
-.flex-center-md{
-	@media(min-width: 40em){
+.flex-center-row{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.flex-center-row-md-up{
+	@include breakpoint(medium up) {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-direction: row;
+	}
+}
+
+.flex-center-md-up{
+	@include breakpoint(medium up) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column; //ie11
 	}
 }
 .flex-center-start{
